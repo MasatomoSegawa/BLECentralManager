@@ -29,7 +29,7 @@ class CentralManager : NSObject , CBCentralManagerDelegate{
     }
     
     /**
-    アドバタイズしてるPeripheralのスキャンを開始する.
+    アドバタイズしてるPeripheralのスキャンを開始するメソッド.
     */
     func StartPeripheralScane(){
         
@@ -38,9 +38,11 @@ class CentralManager : NSObject , CBCentralManagerDelegate{
     }
     
     /**
-    
+    Peripheralが検知されたら呼び出されるメソッド.
     */
     func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
+        
+        println(peripheral.name)
         
     }
     
@@ -49,8 +51,27 @@ class CentralManager : NSObject , CBCentralManagerDelegate{
     */
     func centralManagerDidUpdateState(central: CBCentralManager!) {
         
-        println(central.state)
-        
+        switch(central.state){
+            
+        case .Unknown:
+            println("Unknown")
+            
+        case .PoweredOff:
+            println("PoweredOff")
+
+        case .PoweredOn:
+            println("PoweredOn")
+            
+        case .Unsupported:
+            println("Unsupported")
+            
+        case .Resetting:
+            println("Resetting")
+            
+        case .Unauthorized:
+            println("Unauthorized")
+        }
+                
     }
     
 }

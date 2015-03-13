@@ -81,11 +81,11 @@
 			children = (
 				F18824EF1AB276D400D27862 /* AppDelegate.swift */,
 				F18824F11AB276D400D27862 /* ViewController.swift */,
+				F188250F1AB27FC900D27862 /* CentralManager.swift */,
 				F18824F31AB276D400D27862 /* Main.storyboard */,
 				F18824F61AB276D400D27862 /* Images.xcassets */,
 				F18824F81AB276D400D27862 /* LaunchScreen.xib */,
 				F18824ED1AB276D400D27862 /* Supporting Files */,
-				F188250F1AB27FC900D27862 /* CentralManager.swift */,
 			);
 			path = SwiftCoreBluetooth;
 			sourceTree = "<group>";
@@ -411,6 +411,7 @@
 				F188250B1AB276D500D27862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F188250C1AB276D500D27862 /* Build configuration list for PBXNativeTarget "SwiftCoreBluetoothTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				F188250E1AB276D500D27862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
